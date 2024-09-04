@@ -1,4 +1,4 @@
-/* Base styles for the body */
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -8,7 +8,7 @@ body {
     color: #dce6f5; 
 }
 
-/* Header styles */
+
 header {
     position: relative;
     background-color: #162447; 
@@ -21,14 +21,14 @@ header {
     animation: fadeIn 2s ease-in-out; 
 }
 
-/* Styling for header content to align items */
+
 .header-content {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-/* Logo styling with increased size and blue shadow effect */
+
 .logo {
     width: 350px; 
     height: auto;
@@ -36,7 +36,7 @@ header {
     filter: drop-shadow(0 0 10px rgba(0, 123, 255, 0.8)); 
 }
 
-/* Text styling inside header */
+
 header h1 {
     margin: 0;
     font-size: 2.2em;
@@ -45,7 +45,7 @@ header h1 {
     animation: textGlitch 3s infinite; 
 }
 
-/* Navigation bar styles */
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -86,7 +86,7 @@ main {
 }
 
 
-/* Card style for sections */
+
 .intro-card {
     padding: 20px;
     background-color: #162447;
@@ -100,7 +100,7 @@ main {
     box-shadow: 0 8px 16px rgba(0, 123, 255, 0.4);
 }
 
-/* Footer styles */
+
 footer {
     text-align: center;
     padding: 15px;
@@ -112,9 +112,9 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Scroll-to-top button */
+
 #scrollToTop {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
     bottom: 40px;
     right: 40px;
@@ -134,7 +134,7 @@ footer {
     background-color: #0a0f2c;
 }
 
-/* Keyframes for blue glow animation */
+
 @keyframes blueGlow {
     from {
         box-shadow: 0 0 15px #1f7aec, 0 0 20px #1f7aec, 0 0 25px #1f7aec, 0 0 30px #1f7aec;
@@ -144,14 +144,14 @@ footer {
     }
 }
 
-/* Keyframes for animated gradient background */
+
 @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* Keyframes for fade in animation */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -161,7 +161,7 @@ footer {
     }
 }
 
-/* Keyframes for link hover animation */
+
 @keyframes linkHover {
     from {
         transform: scale(1);
@@ -171,7 +171,7 @@ footer {
     }
 }
 
-/* Responsive design for smaller screens */
+
 @media (max-width: 600px) {
     .header-content {
         flex-direction: column;
