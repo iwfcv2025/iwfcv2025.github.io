@@ -75,7 +75,6 @@ nav ul li a:hover {
 
 
 main {
-    background-image: url('background.jpg');
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center; /* Center the image */
     padding: 20px;
