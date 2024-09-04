@@ -1,4 +1,4 @@
-// Typing animation for the welcome message
+
 document.addEventListener("DOMContentLoaded", function() {
     const textElement = document.getElementById("typing-text");
     const text = "Welcome to the International Workshop on Future Computing and Vision 2025! We are excited to host another year of groundbreaking research presentations, networking opportunities, and keynote speeches.";
@@ -8,14 +8,14 @@ document.addEventListener("DOMContentLoaded", function() {
         if (index < text.length) {
             textElement.innerHTML += text.charAt(index);
             index++;
-            setTimeout(type, 50); // Adjust typing speed here
+            setTimeout(type, 50); 
         }
     }
 
     type();
 });
 
-// Scroll-to-top button functionality
+
 window.onscroll = function() {
     const scrollToTopButton = document.getElementById("scrollToTop");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
