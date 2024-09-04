@@ -1,0 +1,193 @@
+/* Base styles for the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #0a0f2c; 
+    color: #dce6f5; 
+}
+
+/* Header styles */
+header {
+    position: relative;
+    background-color: #162447; 
+    color: #1f7aec; 
+    padding: 10px 20px; 
+    text-align: left;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden; 
+    animation: fadeIn 2s ease-in-out; 
+}
+
+/* Styling for header content to align items */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Logo styling with increased size and blue shadow effect */
+.logo {
+    width: 350px; 
+    height: auto;
+    margin-right: 20px; 
+    filter: drop-shadow(0 0 10px rgba(0, 123, 255, 0.8)); 
+}
+
+/* Text styling inside header */
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 123, 255, 0.8); 
+    animation: textGlitch 3s infinite; 
+}
+
+/* Navigation bar styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #1f7aec; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #1f7aec;
+    color: #0a0f2c; 
+    animation: linkHover 0.3s ease-in-out; 
+}
+
+
+main {
+    background-image: url('background.jpg');
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Center the image */
+    padding: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #1f7aec;
+}
+
+
+/* Card style for sections */
+.intro-card {
+    padding: 20px;
+    background-color: #162447;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.intro-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.4);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #162447; 
+    color: #dce6f5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Scroll-to-top button */
+#scrollToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #1f7aec;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#scrollToTop:hover {
+    background-color: #0a0f2c;
+}
+
+/* Keyframes for blue glow animation */
+@keyframes blueGlow {
+    from {
+        box-shadow: 0 0 15px #1f7aec, 0 0 20px #1f7aec, 0 0 25px #1f7aec, 0 0 30px #1f7aec;
+    }
+    to {
+        box-shadow: 0 0 20px #1f7aec, 0 0 25px #1f7aec, 0 0 30px #1f7aec, 0 0 35px #1f7aec;
+    }
+}
+
+/* Keyframes for animated gradient background */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Keyframes for fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keyframes for link hover animation */
+@keyframes linkHover {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
