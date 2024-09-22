@@ -26,13 +26,17 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 
 .logo {
     width: 350px; 
     height: auto;
-    margin-right: 10px; 
+    margin-right: 20px; 
+    margin-top: 0; 
+    padding: 0;
     filter: drop-shadow(0 0 10px rgba(0, 123, 255, 0.8)); 
 }
 
@@ -47,7 +51,7 @@ header h1 {
 
 header h2.date {
     font-size: 1.2em; 
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 nav ul {
