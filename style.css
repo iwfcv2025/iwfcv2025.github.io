@@ -45,11 +45,7 @@ header h1 {
     animation: textGlitch 3s infinite; 
 }
 
-header h2 {
-    font-size: 1.2em;
-    margin-top: 0.5em;
-    
-}
+
 
 nav ul {
     list-style-type: none;
