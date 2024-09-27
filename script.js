@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
- 
+    
     function loadHeadline() {
-        fetch('head.html')
+        fetch('head.html')  
             .then(response => response.text())
             .then(data => {
                 document.getElementById('headline').innerHTML = data;
@@ -9,7 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => console.log("Error loading head.html: ", error));
     }
 
-loadHeadline();
+
+    loadHeadline();
+});
+
 
 window.onscroll = function() {
     const scrollToTopButton = document.getElementById("scrollToTop");
