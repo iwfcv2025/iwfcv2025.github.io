@@ -1,16 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
-    
-    function loadHeadline() {
-        fetch('head.html')  
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('headline').innerHTML = data;
-            })
-            .catch(error => console.log("Error loading head.html: ", error));
+    const textElement = document.getElementById("typing-text");
+    const text = "Welcome to the International Workshop on Future Computing and Vision 2025! We are excited to host another year of groundbreaking research presentations, networking opportunities, and keynote speeches.";
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            textElement.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(type, 50); 
+        }
     }
 
-
-    loadHeadline();
+    type();
 });
 
 
@@ -25,4 +26,4 @@ window.onscroll = function() {
 
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+} 
